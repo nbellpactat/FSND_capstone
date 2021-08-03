@@ -1,3 +1,7 @@
+# Jetbrains IDE Configuration
+.idea
+
+### Github generated Python .gitignore
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
