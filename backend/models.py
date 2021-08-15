@@ -33,15 +33,15 @@ workout_set_assoc_table = Table('workout_set', Base.metadata,
                                 Column('set_id', ForeignKey('set.id'), primary_key=True)
                                 )
 
-exercise_muscle_assoc_table = Table('exercise_muscle', Base.metadata,
-                                    Column('exercise_id', ForeignKey('exercise.id'), primary_key=True),
-                                    Column('muscle_id', ForeignKey('muscle.id'), primary_key=True)
-                                    )
-
 exercise_set_assoc_table = Table('exercise_set', Base.metadata,
                                  Column('exercise_id', ForeignKey('exercise.id'), primary_key=True),
                                  Column('set_id', ForeignKey('set.id'), primary_key=True)
                                  )
+
+exercise_muscle_assoc_table = Table('exercise_muscle', Base.metadata,
+                                    Column('exercise_id', ForeignKey('exercise.id'), primary_key=True),
+                                    Column('muscle_id', ForeignKey('muscle.id'), primary_key=True)
+                                    )
 
 
 class User(db.Model):
